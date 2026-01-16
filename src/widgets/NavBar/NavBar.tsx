@@ -25,7 +25,6 @@ const NavBar: React.FC<NavBarProps> = ({ openSidebar }) => {
         <button
           className="dashboardMenuBtn"
           onClick={() => {
-            console.log("Open Side Bar Clicked");
             openSidebar();
           }}
         >

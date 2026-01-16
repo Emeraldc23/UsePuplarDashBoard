@@ -31,8 +31,6 @@ export default function Customers() {
         setIsLoading(true);
         const fetchData = await fetch(API);
         const data = await fetchData.json();
-        console.log(data);
-
         const rows: UserRow[] = data.map((user: any) => ({
           id: user.id,
           user: user.name,
