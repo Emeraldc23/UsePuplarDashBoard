@@ -1,0 +1,44 @@
+.tableRow {
+  .tableCell {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+  }
+}
+.tbody {
+  .tRow {
+    text-align: center;
+    .tableCell {
+      text-align: center;
+      background-color: whitesmoke;
+      .products {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .prodImage {
+          width: 50px;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 1px solid #04350c;
+        }
+        span {
+          width: 180px;
+        }
+      }
+    }
+    .Status {
+      padding: 5px;
+      border-radius: 5px;
+      &.Approved {
+        background-color: rgb(135, 230, 135);
+        color: green;
+      }
+      &.Pending {
+        background-color: rgba(173, 188, 1, 0.29);
+        color: goldenrod;
+      }
+    }
+  }
+}

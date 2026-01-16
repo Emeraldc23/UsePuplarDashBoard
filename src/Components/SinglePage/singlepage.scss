@@ -1,0 +1,100 @@
+.singlePageContainer {
+  color: #616161;
+  background-color: whitesmoke;
+  display: flex;
+  .singlePage {
+    flex: 6;
+    .userDetails {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      .userInfo {
+        flex: 2;
+        --webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        gap: 25px;
+        padding: 10px;
+        border-radius: 10px;
+        .infoHeader {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+          .editButton {
+            color: green;
+            background-color: rgba(0, 60, 10, 0.2);
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 5px;
+          }
+        }
+        .userItem {
+          display: flex;
+          justify-content: space-between;
+          height: auto;
+          gap: 20px;
+          .userImage {
+            flex: 1;
+          }
+          .itemImage {
+            width: 130px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .details {
+            flex: 2;
+            .itemTitle {
+              margin-bottom: 20px;
+              font-size: 32px;
+              font-weight: 700;
+            }
+            .detailItem {
+              .itemValue,
+              .itemKey {
+                padding: 5px 0;
+                span {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+      .userSpending {
+        flex: 3;
+        --webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 10px;
+        padding: 10px;
+        h2 {
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+      }
+    }
+    .usertransactions {
+      padding: 20px;
+      --webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      border-radius: 10px;
+      background: white;
+      margin: 20px;
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .singlePageContainer {
+    .singlePage {
+      .userDetails {
+        flex-direction: column;
+      }
+    }
+  }
+}

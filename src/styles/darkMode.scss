@@ -1,0 +1,245 @@
+.app.dark {
+  background: #111;
+  color: rgb(156, 156, 156);
+  .navBar {
+    background: #111;
+    border-color: #444;
+    color: #999;
+
+    .searchTag {
+      border-color: #444;
+      input {
+        color: white;
+        &::placeholder {
+          color: #999;
+        }
+      }
+    }
+  }
+  .sideBar {
+    background-color: #1a1a1a;
+    border-right: 0.5px solid #444;
+    .top {
+      .logo {
+        color: #0c800c;
+      }
+    }
+    .bottom {
+      .title {
+        color: #999;
+      }
+      li {
+        &:hover {
+          background: #333;
+        }
+        .icon {
+          color: #0c800c;
+        }
+        span {
+          color: #ccc;
+        }
+      }
+    }
+  }
+  .homeNavbar {
+    background: #111;
+    color: #999;
+    .widgets {
+      .widget {
+        background: #1a1a1a;
+        color: #ccc;
+        box-shadow: none;
+        margin-right: 10px;
+        .link {
+          color: #0c800c;
+        }
+      }
+    }
+  }
+  .list {
+    h2 {
+      color: #ccc;
+    }
+  }
+  .tableRow {
+    .tableCell {
+      background-color: #1a1a1a;
+      color: #ccc;
+    }
+  }
+  .tbody {
+    .tRow {
+      .tableCell {
+        background-color: #1a1a1a;
+        color: #ccc;
+        .products {
+          background-color: #1a1a1a;
+          span {
+            color: #ccc;
+          }
+          .prodImage {
+            border: 1px solid #0c800c;
+          }
+        }
+      }
+    }
+  }
+
+  .singlePage {
+    background-color: #1a1a1a;
+    color: #ccc;
+    box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+    .userDetails {
+      background-color: #1a1a1a;
+      color: #ccc;
+      .userInfo {
+        box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+      }
+      .userSpending {
+        background-color: #1a1a1a;
+        color: #ccc;
+        box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+      }
+    }
+    .usertransactions {
+      background-color: #1a1a1a;
+      color: #ccc;
+    }
+  }
+  .newUser {
+    background-color: #1a1a1a;
+    .userContent {
+      .newUserDetails {
+        background-color: #1a1a1a;
+        color: #ccc;
+        .newUserHeading {
+          color: #ccc;
+          background-color: #1a1a1a;
+          box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+        }
+        .newUserInfo {
+          background-color: #1a1a1a;
+          color: #ccc;
+          box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+          .userForm {
+            .formInput {
+              label {
+                color: #ccc;
+              }
+              input {
+                background-color: #111;
+                color: #ccc;
+                border: 1px solid #444;
+              }
+              select {
+                background-color: #111;
+                color: #ccc;
+                border: 1px solid #444;
+              }
+            }
+            .newUserButton {
+              background-color: #0c800c;
+              color: white;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .products {
+    background-color: #1a1a1a;
+    color: #ccc;
+    .prodPage {
+      .prodItem {
+        background-color: #1a1a1a;
+      }
+    }
+  }
+  .customers {
+    background-color: #1a1a1a;
+    color: #ccc;
+    .customerContainer {
+      background-color: #1a1a1a;
+      .table {
+        background-color: #1a1a1a;
+        .mainTable {
+          background: #121212;
+          color: #e0e0e0;
+          .MuiDataGrid-columnHeaders {
+            background-color: #1e1e1e;
+            color: #ccc;
+            .MuiDataGrid-columnHeader {
+              background-color: #111 !important;
+              color: #ccc;
+            }
+          }
+
+          .MuiDataGrid-row {
+            &:hover {
+              background: transparent !important;
+            }
+          }
+
+          .MuiDataGrid-cell {
+            border-color: #333;
+
+            &:hover {
+              background: #2a2a2a !important;
+            }
+          }
+          .MuiDataGrid-footerContainer {
+            border-top: 1px solid #333;
+            background-color: #1a1a1a !important;
+            color: #ccc !important;
+          }
+
+          .MuiTablePagination-displayedRows,
+          .MuiTablePagination-selectLabel {
+            color: #999 !important;
+          }
+
+          // Pagination icons
+          .MuiTablePagination-actions svg {
+            color: #999 !important;
+          }
+
+          // Rows-per-page dropdown
+          .MuiInputBase-root {
+            color: #fff !important;
+
+            .MuiSvgIcon-root {
+              color: #fff !important;
+            }
+          }
+
+          // Menu (the dropdown list)
+          .MuiMenu-paper {
+            background-color: #111 !important;
+            color: #fff !important;
+          }
+        }
+      }
+    }
+  }
+  .btns {
+    .view,
+    .delete {
+      color: grey;
+      border: 1px solid grey;
+    }
+  }
+  .charts {
+    .chart {
+      background-color: #1a1a1a;
+      color: #ccc;
+      box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+      .chart_title {
+        color: #ccc;
+      }
+    }
+    .featured {
+      box-shadow: 2px 2px 5px 0 rgba(201, 201, 201, 0.5);
+    }
+  }
+}
