@@ -1,16 +1,85 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Puplar Dashboard
 
-Currently, two official plugins are available:
+A responsive React dashboard application built with **TypeScript** and **Material-UI (MUI)**. This dashboard includes a sidebar, navbar, search functionality, a dynamic data table with API integration, and responsive mobile support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pages include **Customers**, **Dashboard**, and placeholder pages for sections that are under construction.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [React + Vite](#react--vite)
+- [Puplar Dashboard](#puplar-dashboard)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+  - [Usage](#usage)
+  - [Project Structure](#project-structure)
+  - [Api Integratgion](#api-integratgion)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- **Sidebar** navigation with collapsible mobile view
+- **Navbar** with search, theme toggle, notifications, and profile picture
+- **Data Table** using MUI DataGrid with pagination, filtering, and checkbox selection
+- **API Integration**: Fetch users from [JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
+- **Under Construction** pages for features not yet implemented
+- **Loading State** animation while fetching data
+- **Responsive** design for mobile, tablet, and desktop views
+- **Dark Mode** toggle using React Context API
+- **TypeScript** for type safety and maintainability
+
+---
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Material-UI (MUI)
+- React Router v6
+- Sass (SCSS)
+- JSONPlaceholder API for demo data
+
+---
+
+## Usage
+
+- The sidebar allows navigation to Dashboard, Customers, and under-construction pages.
+
+- On mobile screens, the sidebar collapses and can be toggled via the dashboard menu icon in the navbar.
+
+- Search for users by name or city using the search input in the navbar.
+
+- Click on a customer to view detailed information.
+
+- Toggle dark/light theme using the switch in the navbar.
+
+## Project Structure
+
+N/B Not the full structure
+
+src/
+/ assets
+/ Component/ (various components are here)
+/Context
+/Styles
+/underConstruction
+/utlis
+/widgets
+App.tsx
+/index.css
+/layout.scss
+/main.jsx
+/SearchLayout.tsx
+
+## Api Integratgion
+
+- Users data fetched from JSONPlaceholder
+
+- Displayed in a DataGrid table with pagination and filtering
+
+- Shows loading animation while fetching data
